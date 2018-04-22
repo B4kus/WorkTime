@@ -18,7 +18,6 @@ class UserViewController: UIViewController {
 
        UserViewConfiguration()
         
-    
     }
 
     func UserViewConfiguration() {
