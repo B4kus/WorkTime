@@ -12,6 +12,9 @@
 		D77BA809208B99ED005D0E2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D77BA807208B99ED005D0E2E /* Main.storyboard */; };
 		D77BA80B208B99ED005D0E2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D77BA80A208B99ED005D0E2E /* Assets.xcassets */; };
 		D77BA80E208B99ED005D0E2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D77BA80C208B99ED005D0E2E /* LaunchScreen.storyboard */; };
+		D77BA816208B9D30005D0E2E /* networking.png in Resources */ = {isa = PBXBuildFile; fileRef = D77BA815208B9D30005D0E2E /* networking.png */; };
+		D77BA818208B9DCA005D0E2E /* padlock.png in Resources */ = {isa = PBXBuildFile; fileRef = D77BA817208B9DCA005D0E2E /* padlock.png */; };
+		D77BA81A208B9DD0005D0E2E /* login.png in Resources */ = {isa = PBXBuildFile; fileRef = D77BA819208B9DD0005D0E2E /* login.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		D77BA80A208B99ED005D0E2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D77BA80D208B99ED005D0E2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D77BA80F208B99ED005D0E2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D77BA815208B9D30005D0E2E /* networking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = networking.png; sourceTree = "<group>"; };
+		D77BA817208B9DCA005D0E2E /* padlock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = padlock.png; sourceTree = "<group>"; };
+		D77BA819208B9DD0005D0E2E /* login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,9 @@
 				D77BA803208B99ED005D0E2E /* AppDelegate.swift */,
 				D77BA805208B99ED005D0E2E /* ViewController.swift */,
 				D77BA807208B99ED005D0E2E /* Main.storyboard */,
+				D77BA815208B9D30005D0E2E /* networking.png */,
+				D77BA819208B9DD0005D0E2E /* login.png */,
+				D77BA817208B9DCA005D0E2E /* padlock.png */,
 				D77BA80A208B99ED005D0E2E /* Assets.xcassets */,
 				D77BA80C208B99ED005D0E2E /* LaunchScreen.storyboard */,
 				D77BA80F208B99ED005D0E2E /* Info.plist */,
@@ -123,8 +132,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D77BA80E208B99ED005D0E2E /* LaunchScreen.storyboard in Resources */,
+				D77BA81A208B9DD0005D0E2E /* login.png in Resources */,
+				D77BA816208B9D30005D0E2E /* networking.png in Resources */,
 				D77BA80B208B99ED005D0E2E /* Assets.xcassets in Resources */,
 				D77BA809208B99ED005D0E2E /* Main.storyboard in Resources */,
+				D77BA818208B9DCA005D0E2E /* padlock.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
