@@ -33,27 +33,6 @@ class RegisterViewController: UIViewController {
         whiteView.layer.shadowColor = UIColor.black.cgColor
         whiteView.layer.shadowOpacity = 0.4
         
-        emailTextField.layer.cornerRadius = 6
-        emailTextField.layer.borderWidth = 0.5
-        emailTextField.layer.backgroundColor = UIColor.black.withAlphaComponent(0.1).cgColor
-        
-        repEmailTextField.layer.cornerRadius = 6
-        repEmailTextField.layer.borderWidth = 0.5
-        repEmailTextField.layer.backgroundColor = UIColor.black.withAlphaComponent(0.1).cgColor
-        
-        passwordTextField.layer.cornerRadius = 6
-        passwordTextField.layer.borderWidth = 0.5
-        passwordTextField.layer.backgroundColor = UIColor.black.withAlphaComponent(0.1).cgColor
-        
-        repPasswordTextField.layer.cornerRadius = 6
-        repPasswordTextField.layer.borderWidth = 0.5
-        repPasswordTextField.layer.backgroundColor = UIColor.black.withAlphaComponent(0.1).cgColor
-        
-        companyCodeTextField.layer.cornerRadius = 6
-        companyCodeTextField.layer.borderWidth = 0.5
-        companyCodeTextField.layer.backgroundColor = UIColor.black.withAlphaComponent(0.1).cgColor
-        
-        
     }
 
 }

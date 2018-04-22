@@ -61,10 +61,7 @@ class AddNewProjectViewController: UIViewController {
         infoTextField.layer.cornerRadius = 6
         infoTextField.layer.borderWidth = 0.5
         infoTextField.layer.backgroundColor = UIColor.black.withAlphaComponent(0.1).cgColor
-        
-        addButtonOutlet.layer.borderWidth = 0.5
-        addButtonOutlet.layer.cornerRadius = 6
-        
+   
         
     }
 }
