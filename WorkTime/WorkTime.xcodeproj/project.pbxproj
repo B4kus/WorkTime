@@ -19,6 +19,7 @@
 		D77BA81E208C95FD005D0E2E /* MainMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77BA81D208C95FD005D0E2E /* MainMasterViewController.swift */; };
 		D77BA820208C9DD4005D0E2E /* ProjectDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77BA81F208C9DD4005D0E2E /* ProjectDetailViewController.swift */; };
 		D77BA822208C9E7A005D0E2E /* UserDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77BA821208C9E7A005D0E2E /* UserDetailViewController.swift */; };
+		D77BA824208CAB90005D0E2E /* AddNewProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77BA823208CAB90005D0E2E /* AddNewProjectViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		D77BA81D208C95FD005D0E2E /* MainMasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMasterViewController.swift; sourceTree = "<group>"; };
 		D77BA81F208C9DD4005D0E2E /* ProjectDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailViewController.swift; sourceTree = "<group>"; };
 		D77BA821208C9E7A005D0E2E /* UserDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailViewController.swift; sourceTree = "<group>"; };
+		D77BA823208CAB90005D0E2E /* AddNewProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewProjectViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				D77BA81D208C95FD005D0E2E /* MainMasterViewController.swift */,
 				D77BA81F208C9DD4005D0E2E /* ProjectDetailViewController.swift */,
 				D77BA821208C9E7A005D0E2E /* UserDetailViewController.swift */,
+				D77BA823208CAB90005D0E2E /* AddNewProjectViewController.swift */,
 				D77BA807208B99ED005D0E2E /* Main.storyboard */,
 				D77BA815208B9D30005D0E2E /* networking.png */,
 				D77BA819208B9DD0005D0E2E /* login.png */,
@@ -162,6 +165,7 @@
 				D77BA81C208C903F005D0E2E /* RegisterViewController.swift in Sources */,
 				D77BA820208C9DD4005D0E2E /* ProjectDetailViewController.swift in Sources */,
 				D77BA822208C9E7A005D0E2E /* UserDetailViewController.swift in Sources */,
+				D77BA824208CAB90005D0E2E /* AddNewProjectViewController.swift in Sources */,
 				D77BA81E208C95FD005D0E2E /* MainMasterViewController.swift in Sources */,
 				D77BA806208B99ED005D0E2E /* ViewController.swift in Sources */,
 				D77BA804208B99ED005D0E2E /* AppDelegate.swift in Sources */,
