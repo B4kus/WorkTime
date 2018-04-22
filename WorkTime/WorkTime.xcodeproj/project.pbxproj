@@ -17,6 +17,7 @@
 		D77BA81A208B9DD0005D0E2E /* login.png in Resources */ = {isa = PBXBuildFile; fileRef = D77BA819208B9DD0005D0E2E /* login.png */; };
 		D77BA81C208C903F005D0E2E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77BA81B208C903F005D0E2E /* RegisterViewController.swift */; };
 		D77BA81E208C95FD005D0E2E /* MainMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77BA81D208C95FD005D0E2E /* MainMasterViewController.swift */; };
+		D77BA820208C9DD4005D0E2E /* ProjectDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77BA81F208C9DD4005D0E2E /* ProjectDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		D77BA819208B9DD0005D0E2E /* login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login.png; sourceTree = "<group>"; };
 		D77BA81B208C903F005D0E2E /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		D77BA81D208C95FD005D0E2E /* MainMasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMasterViewController.swift; sourceTree = "<group>"; };
+		D77BA81F208C9DD4005D0E2E /* ProjectDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				D77BA805208B99ED005D0E2E /* ViewController.swift */,
 				D77BA81B208C903F005D0E2E /* RegisterViewController.swift */,
 				D77BA81D208C95FD005D0E2E /* MainMasterViewController.swift */,
+				D77BA81F208C9DD4005D0E2E /* ProjectDetailViewController.swift */,
 				D77BA807208B99ED005D0E2E /* Main.storyboard */,
 				D77BA815208B9D30005D0E2E /* networking.png */,
 				D77BA819208B9DD0005D0E2E /* login.png */,
@@ -154,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D77BA81C208C903F005D0E2E /* RegisterViewController.swift in Sources */,
+				D77BA820208C9DD4005D0E2E /* ProjectDetailViewController.swift in Sources */,
 				D77BA81E208C95FD005D0E2E /* MainMasterViewController.swift in Sources */,
 				D77BA806208B99ED005D0E2E /* ViewController.swift in Sources */,
 				D77BA804208B99ED005D0E2E /* AppDelegate.swift in Sources */,
