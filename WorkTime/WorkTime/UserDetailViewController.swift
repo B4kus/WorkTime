@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Charts
 
 class UserDetailViewController: UIViewController {
 
@@ -15,15 +16,33 @@ class UserDetailViewController: UIViewController {
     @IBOutlet weak var emailOutlet: UILabel!
     @IBOutlet weak var phoneOutlet: UILabel!
     @IBOutlet weak var userImageView: UIImageView!
+    @IBOutlet weak var chartView: BarChartView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-    userImageView.layer.cornerRadius = userImageView.frame.size.width / 2
+        
+        barChartUpdate()
+        userImageView.layer.cornerRadius = userImageView.frame.size.width / 2
+        
+        
+        
     }
 
-
+    func barChartUpdate () {
+        
+        let entry1 = BarChartDataEntry(x: 1.0, y: Double(100))
+        let entry2 = BarChartDataEntry(x: 2.0, y: Double(68))
+        let entry3 = BarChartDataEntry(x: 3.0, y: Double(10))
+        let dataSet = BarChartDataSet(values: [entry1, entry2, entry3], label: "Widgets Type")
+        let data = BarChartData(dataSets: [dataSet])
+        
+        chartView.chartDescription?.text = ""
+        chartView.data = data
+        chartView.notifyDataSetChanged()
+    }
+    
+    
     
     
 

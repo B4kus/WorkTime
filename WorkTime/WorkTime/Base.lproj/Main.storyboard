@@ -50,6 +50,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9xF-Fn-pOe" customClass="OrangeCustomButton" customModule="WorkTime" customModuleProvider="target">
                                         <rect key="frame" x="70" y="135" width="100" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.45098039215686275" blue="0.27843137254901962" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Zaloguj">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
@@ -87,10 +88,10 @@
             </objects>
             <point key="canvasLocation" x="-135.19999999999999" y="126.38680659670166"/>
         </scene>
-        <!--User View Controller-->
+        <!--Profil-->
         <scene sceneID="2Pc-g6-fqf">
             <objects>
-                <viewController id="YOy-PM-pnH" customClass="UserViewController" customModule="WorkTime" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Profil" id="YOy-PM-pnH" customClass="UserViewController" customModule="WorkTime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="E56-vz-xkl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -149,7 +150,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c6H-zX-cks" customClass="OrangeCustomButton" customModule="WorkTime" customModuleProvider="target">
                                 <rect key="frame" x="137" y="617" width="100" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Wyloguj"/>
+                                <state key="normal" title="Wyloguj">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.70980392156862748" green="0.8784313725490196" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -218,10 +221,10 @@
             </objects>
             <point key="canvasLocation" x="1472.8" y="125.4872563718141"/>
         </scene>
-        <!--Add New Project View Controller-->
+        <!--Dodaj nowy projekt-->
         <scene sceneID="h4B-1g-hNh">
             <objects>
-                <viewController id="mRw-wR-Aef" customClass="AddNewProjectViewController" customModule="WorkTime" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Dodaj nowy projekt" id="mRw-wR-Aef" customClass="AddNewProjectViewController" customModule="WorkTime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pPK-6w-L9p">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -265,7 +268,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SC4-w0-zd0" customClass="CustomTextField" customModule="WorkTime" customModuleProvider="target">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Inne" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SC4-w0-zd0" customClass="CustomTextField" customModule="WorkTime" customModuleProvider="target">
                                         <rect key="frame" x="20" y="248" width="200" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <nil key="textColor"/>
@@ -313,10 +316,10 @@
             </objects>
             <point key="canvasLocation" x="1472.8" y="903.59820089955031"/>
         </scene>
-        <!--Project Detail View Controller-->
+        <!--Detale projektów-->
         <scene sceneID="KJG-lT-Giq">
             <objects>
-                <viewController id="zYr-eF-8dd" customClass="ProjectDetailViewController" customModule="WorkTime" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Detale projektów" id="zYr-eF-8dd" customClass="ProjectDetailViewController" customModule="WorkTime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0iX-6H-akG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -325,7 +328,7 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X8s-OJ-J29">
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X8s-OJ-J29" customClass="BarChartView" customModule="Charts">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -359,6 +362,7 @@
                         <viewLayoutGuide key="safeArea" id="Bwz-Pa-Ma4"/>
                     </view>
                     <connections>
+                        <outlet property="chartView" destination="X8s-OJ-J29" id="TjX-Rl-2Bt"/>
                         <outlet property="projectDetailTableView" destination="9LN-kK-gof" id="3eI-7u-6Pd"/>
                     </connections>
                 </viewController>
@@ -366,10 +370,10 @@
             </objects>
             <point key="canvasLocation" x="2321" y="126"/>
         </scene>
-        <!--User Detail View Controller-->
+        <!--Użytkownik-->
         <scene sceneID="hvv-p1-Vus">
             <objects>
-                <viewController id="nxd-Ik-MQC" customClass="UserDetailViewController" customModule="WorkTime" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Użytkownik" id="nxd-Ik-MQC" customClass="UserDetailViewController" customModule="WorkTime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="j6m-gk-EDE">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -411,11 +415,6 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </view>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IrO-vx-j6X">
-                                        <rect key="frame" x="0.0" y="119" width="371" height="230"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                    </view>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NsK-t6-6hT">
                                         <rect key="frame" x="0.0" y="348" width="371" height="255"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -435,6 +434,11 @@
                                             <outlet property="delegate" destination="nxd-Ik-MQC" id="5HU-fw-5we"/>
                                         </connections>
                                     </tableView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IrO-vx-j6X" customClass="BarChartView" customModule="Charts">
+                                        <rect key="frame" x="0.0" y="119" width="371" height="230"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
                                 </subviews>
                             </scrollView>
                         </subviews>
@@ -442,6 +446,7 @@
                         <viewLayoutGuide key="safeArea" id="1d4-sW-emW"/>
                     </view>
                     <connections>
+                        <outlet property="chartView" destination="IrO-vx-j6X" id="Jdw-wf-6xj"/>
                         <outlet property="emailOutlet" destination="pO0-ZR-5Sh" id="OBV-Gw-vJL"/>
                         <outlet property="phoneOutlet" destination="0to-EF-9ox" id="7co-ci-3IB"/>
                         <outlet property="userDetailTableView" destination="NsK-t6-6hT" id="XYk-Aa-O01"/>
@@ -500,8 +505,16 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wow-TR-M9h" customClass="OrangeCustomButton" customModule="WorkTime" customModuleProvider="target">
+                                        <rect key="frame" x="70" y="273" width="100" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="0.49803921569999998" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Zaloguj">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fpe-lN-t0C" customClass="OrangeCustomButton" customModule="WorkTime" customModuleProvider="target">
-                                        <rect key="frame" x="130" y="322" width="90" height="30"/>
+                                        <rect key="frame" x="70" y="311" width="100" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="1" green="0.49803921569999998" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="Anuluj">
@@ -510,14 +523,6 @@
                                         <connections>
                                             <segue destination="6eq-wK-e7Y" kind="unwind" unwindAction="dissmissVCWithSegue:" id="kGV-yt-Kru"/>
                                         </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wow-TR-M9h" customClass="OrangeCustomButton" customModule="WorkTime" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="322" width="90" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" red="1" green="0.49803921569999998" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="Zaloguj">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </state>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -560,6 +565,11 @@
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.70980392156862748" green="0.8784313725490196" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.67450980390000004" green="0.86274509799999999" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
