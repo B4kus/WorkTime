@@ -11,12 +11,16 @@ import UIKit
 class UserDetailViewController: UIViewController {
 
     @IBOutlet weak var userDetailTableView: UITableView!
+    @IBOutlet weak var userNameOutlet: UILabel!
+    @IBOutlet weak var emailOutlet: UILabel!
+    @IBOutlet weak var phoneOutlet: UILabel!
+    @IBOutlet weak var userImageView: UIImageView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+    userImageView.layer.cornerRadius = userImageView.frame.size.width / 2
     }
 
 
