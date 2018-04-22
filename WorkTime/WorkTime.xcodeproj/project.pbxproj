@@ -15,6 +15,7 @@
 		D77BA816208B9D30005D0E2E /* networking.png in Resources */ = {isa = PBXBuildFile; fileRef = D77BA815208B9D30005D0E2E /* networking.png */; };
 		D77BA818208B9DCA005D0E2E /* padlock.png in Resources */ = {isa = PBXBuildFile; fileRef = D77BA817208B9DCA005D0E2E /* padlock.png */; };
 		D77BA81A208B9DD0005D0E2E /* login.png in Resources */ = {isa = PBXBuildFile; fileRef = D77BA819208B9DD0005D0E2E /* login.png */; };
+		D77BA81C208C903F005D0E2E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77BA81B208C903F005D0E2E /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		D77BA815208B9D30005D0E2E /* networking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = networking.png; sourceTree = "<group>"; };
 		D77BA817208B9DCA005D0E2E /* padlock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = padlock.png; sourceTree = "<group>"; };
 		D77BA819208B9DD0005D0E2E /* login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login.png; sourceTree = "<group>"; };
+		D77BA81B208C903F005D0E2E /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			children = (
 				D77BA803208B99ED005D0E2E /* AppDelegate.swift */,
 				D77BA805208B99ED005D0E2E /* ViewController.swift */,
+				D77BA81B208C903F005D0E2E /* RegisterViewController.swift */,
 				D77BA807208B99ED005D0E2E /* Main.storyboard */,
 				D77BA815208B9D30005D0E2E /* networking.png */,
 				D77BA819208B9DD0005D0E2E /* login.png */,
@@ -147,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D77BA81C208C903F005D0E2E /* RegisterViewController.swift in Sources */,
 				D77BA806208B99ED005D0E2E /* ViewController.swift in Sources */,
 				D77BA804208B99ED005D0E2E /* AppDelegate.swift in Sources */,
 			);

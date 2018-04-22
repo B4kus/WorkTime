@@ -28,6 +28,7 @@ class ViewController: UIViewController {
         
     }
 
+    @IBAction func dissmissVC(segue: UIStoryboardSegue){}
     
     func loginConfiguration() {
         
