@@ -21,7 +21,7 @@ class ProjectDetailViewController: UIViewController {
         barChartUpdate()
 
     }
-    
+    @IBAction func dissmissVC(segue: UIStoryboardSegue){}
     func barChartUpdate () {
         
         let entry1 = BarChartDataEntry(x: 1.0, y: Double(12))
