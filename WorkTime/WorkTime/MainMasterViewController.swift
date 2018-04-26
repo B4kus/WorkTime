@@ -20,7 +20,8 @@ class MainMasterViewController: UIViewController {
         
     }
 
-
+   @IBAction func dissmissVC(segue: UIStoryboardSegue){}
+    
 }
 
 
