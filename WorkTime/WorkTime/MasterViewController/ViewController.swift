@@ -24,10 +24,33 @@ class ViewController: UIViewController {
         super.viewDidLoad()
        
       
+    
+    }
+    
+    @IBAction func logInButton(_ sender: Any) {
+        
+        if (emailTextField.text?.isEmpty)! || (passwordTextField.text?.isEmpty)! {
+            
+            let alert = UIAlertController(title: "Puste pola!", message: "Proszę uzupełnić e-mail lub hasło", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            
+        } else if (emailTextField.text != "szymon") || (passwordTextField.text != "szymon") {
+            
+            let alert = UIAlertController(title: "Błąd", message: "Błędny adres e-mail lub hasło,", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            
+        } else {
+            
+            print("okey ")
+            
+        }
         
         
     }
-
+    
+    
     @IBAction func dissmissVC(segue: UIStoryboardSegue){}
     
 

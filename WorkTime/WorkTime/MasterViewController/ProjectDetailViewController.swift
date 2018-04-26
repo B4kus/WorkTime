@@ -30,6 +30,7 @@ class ProjectDetailViewController: UIViewController {
         let dataSet = BarChartDataSet(values: [entry1, entry2, entry3], label: "Widgets Type")
         let data = BarChartData(dataSets: [dataSet])
         
+        
         chartView.chartDescription?.text = ""
         chartView.data = data
         chartView.notifyDataSetChanged()
