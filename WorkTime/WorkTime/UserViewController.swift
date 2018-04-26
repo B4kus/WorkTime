@@ -22,12 +22,9 @@ class UserViewController: UIViewController {
 
     func UserViewConfiguration() {
         
-        whiteView.layer.cornerRadius = 10
-        whiteView.layer.shadowOffset = CGSize(width: -10, height: 30)
-        whiteView.layer.shadowColor = UIColor.black.cgColor
-        whiteView.layer.shadowOpacity = 0.4
         profilePictureImageView.layer.cornerRadius = 10
         profilePictureImageView.layer.backgroundColor = UIColor.white.withAlphaComponent(0.7).cgColor
+        
         
     }
 }

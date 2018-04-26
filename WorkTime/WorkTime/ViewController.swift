@@ -23,20 +23,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        
-        loginConfiguration()
+      
         
         
     }
 
     @IBAction func dissmissVC(segue: UIStoryboardSegue){}
     
-    func loginConfiguration() {
-        
-        whiteView.layer.cornerRadius = 10
-        whiteView.layer.shadowOffset = CGSize(width: -10, height: 30)
-        whiteView.layer.shadowColor = UIColor.black.cgColor
-        whiteView.layer.shadowOpacity = 0.4
-    
-    }
+
 }
 

@@ -21,18 +21,11 @@ class RegisterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        registerConfiguration()
+      
         
     }
     
     
-    func registerConfiguration() {
-        
-        whiteView.layer.cornerRadius = 10
-        whiteView.layer.shadowOffset = CGSize(width: -10, height: 30)
-        whiteView.layer.shadowColor = UIColor.black.cgColor
-        whiteView.layer.shadowOpacity = 0.4
-        
-    }
+
 
 }

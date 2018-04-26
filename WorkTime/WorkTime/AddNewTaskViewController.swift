@@ -14,7 +14,6 @@ class AddNewTaskViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        UserViewConfiguration()
         
     
         
@@ -27,16 +26,7 @@ class AddNewTaskViewController: UIViewController {
     }
 
 
-    
-    func UserViewConfiguration() {
-        
-        whiteView.layer.cornerRadius = 10
-        whiteView.layer.shadowOffset = CGSize(width: -10, height: 30)
-        whiteView.layer.shadowColor = UIColor.black.cgColor
-        whiteView.layer.shadowOpacity = 0.4
-    
-        
-    }
+
  
 
 }
