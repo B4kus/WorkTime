@@ -62,6 +62,5 @@ class AddNewProjectViewController: UIViewController {
         infoTextField.layer.borderWidth = 0.5
         infoTextField.layer.backgroundColor = UIColor.black.withAlphaComponent(0.1).cgColor
    
-        
     }
 }
