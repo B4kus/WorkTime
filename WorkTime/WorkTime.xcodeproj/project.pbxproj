@@ -10,6 +10,8 @@
 		D18DFCB73F059BF4E3AC3D39 /* Pods_WorkTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEBD30D29777EBA981219B46 /* Pods_WorkTime.framework */; };
 		D72A3CF3208E610D00879265 /* AddNewTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72A3CF2208E610D00879265 /* AddNewTaskViewController.swift */; };
 		D74D3FE92092324A0068E49C /* WhiteUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74D3FE82092324A0068E49C /* WhiteUIView.swift */; };
+		D74D3FEB209233A10068E49C /* User.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D74D3FEA209233A10068E49C /* User.storyboard */; };
+		D74D3FED209239C10068E49C /* UserMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74D3FEC209239C00068E49C /* UserMainViewController.swift */; };
 		D77BA804208B99ED005D0E2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77BA803208B99ED005D0E2E /* AppDelegate.swift */; };
 		D77BA806208B99ED005D0E2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77BA805208B99ED005D0E2E /* ViewController.swift */; };
 		D77BA809208B99ED005D0E2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D77BA807208B99ED005D0E2E /* Main.storyboard */; };
@@ -38,6 +40,8 @@
 		BEBD30D29777EBA981219B46 /* Pods_WorkTime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WorkTime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D72A3CF2208E610D00879265 /* AddNewTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewTaskViewController.swift; sourceTree = "<group>"; };
 		D74D3FE82092324A0068E49C /* WhiteUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteUIView.swift; sourceTree = "<group>"; };
+		D74D3FEA209233A10068E49C /* User.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = User.storyboard; sourceTree = "<group>"; };
+		D74D3FEC209239C00068E49C /* UserMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserMainViewController.swift; sourceTree = "<group>"; };
 		D77BA800208B99ED005D0E2E /* WorkTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D77BA803208B99ED005D0E2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D77BA805208B99ED005D0E2E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +131,8 @@
 				D77BA825208CAF9E005D0E2E /* OrangeCustomButton.swift */,
 				D74D3FE82092324A0068E49C /* WhiteUIView.swift */,
 				D77BA807208B99ED005D0E2E /* Main.storyboard */,
+				D74D3FEA209233A10068E49C /* User.storyboard */,
+				D74D3FEC209239C00068E49C /* UserMainViewController.swift */,
 				D77BA82F208CB486005D0E2E /* analytics.png */,
 				D77BA829208CB337005D0E2E /* curriculum.png */,
 				D77BA831208CF122005D0E2E /* user.png */,
@@ -207,6 +213,7 @@
 				D77BA82E208CB482005D0E2E /* team.png in Resources */,
 				D77BA832208CF122005D0E2E /* user.png in Resources */,
 				D77BA80E208B99ED005D0E2E /* LaunchScreen.storyboard in Resources */,
+				D74D3FEB209233A10068E49C /* User.storyboard in Resources */,
 				D77BA81A208B9DD0005D0E2E /* login.png in Resources */,
 				D77BA816208B9D30005D0E2E /* networking.png in Resources */,
 				D77BA830208CB487005D0E2E /* analytics.png in Resources */,
@@ -278,6 +285,7 @@
 				D77BA806208B99ED005D0E2E /* ViewController.swift in Sources */,
 				D77BA826208CAF9E005D0E2E /* OrangeCustomButton.swift in Sources */,
 				D77BA804208B99ED005D0E2E /* AppDelegate.swift in Sources */,
+				D74D3FED209239C10068E49C /* UserMainViewController.swift in Sources */,
 				D74D3FE92092324A0068E49C /* WhiteUIView.swift in Sources */,
 				D77BA828208CAFBC005D0E2E /* CustomTextField.swift in Sources */,
 			);

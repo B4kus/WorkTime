@@ -685,6 +685,14 @@
             </objects>
             <point key="canvasLocation" x="671" y="126"/>
         </scene>
+        <!--User-->
+        <scene sceneID="37o-63-F1x">
+            <objects>
+                <viewControllerPlaceholder storyboardName="User" id="zwJ-is-iGc" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HyJ-cU-htH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="670" y="686"/>
+        </scene>
     </scenes>
     <resources>
         <image name="analytics.png" width="256" height="256"/>
