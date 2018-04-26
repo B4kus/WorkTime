@@ -25,7 +25,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="networking.png" translatesAutoresizingMaskIntoConstraints="NO" id="lKW-X5-Yb5">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="networking" translatesAutoresizingMaskIntoConstraints="NO" id="lKW-X5-Yb5">
                                 <rect key="frame" x="137" y="66" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -110,7 +110,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SJa-Nd-RrH" customClass="WhiteUIView" customModule="WorkTime" customModuleProvider="target">
-                                <rect key="frame" x="67" y="188" width="240" height="291"/>
+                                <rect key="frame" x="67" y="179" width="240" height="330"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6NZ-b3-NQV">
@@ -148,20 +148,20 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c6H-zX-cks" customClass="OrangeCustomButton" customModule="WorkTime" customModuleProvider="target">
+                                        <rect key="frame" x="70" y="270" width="100" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Wyloguj">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="user.png" translatesAutoresizingMaskIntoConstraints="NO" id="bSW-js-Mhn">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="bSW-js-Mhn">
                                 <rect key="frame" x="127" y="111" width="120" height="120"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c6H-zX-cks" customClass="OrangeCustomButton" customModule="WorkTime" customModuleProvider="target">
-                                <rect key="frame" x="137" y="617" width="100" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Wyloguj">
-                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.70980392156862748" green="0.8784313725490196" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="bwi-oa-gOx"/>
@@ -173,7 +173,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4oK-gZ-SAa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1469.5999999999999" y="-570.76461769115451"/>
+            <point key="canvasLocation" x="1486.5" y="-631.5"/>
         </scene>
         <!--Add New Task View Controller-->
         <scene sceneID="rJc-ab-LqZ">
@@ -383,7 +383,7 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="analytics.png" translatesAutoresizingMaskIntoConstraints="NO" id="Uv5-1E-HNI">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="analytics" translatesAutoresizingMaskIntoConstraints="NO" id="Uv5-1E-HNI">
                                 <rect key="frame" x="137" y="38" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -495,7 +495,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="371" height="120"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="user.png" translatesAutoresizingMaskIntoConstraints="NO" id="6cK-0q-J6N">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="user" translatesAutoresizingMaskIntoConstraints="NO" id="6cK-0q-J6N">
                                                 <rect key="frame" x="8" y="12" width="96" height="96"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.67450980392156867" green="0.86274509803921573" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -644,7 +644,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="team.png" translatesAutoresizingMaskIntoConstraints="NO" id="Xho-uY-0Nj">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="team" translatesAutoresizingMaskIntoConstraints="NO" id="Xho-uY-0Nj">
                                 <rect key="frame" x="137" y="66" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -703,9 +703,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="analytics.png" width="256" height="256"/>
-        <image name="networking.png" width="256" height="256"/>
-        <image name="team.png" width="256" height="256"/>
-        <image name="user.png" width="256" height="256"/>
+        <image name="analytics" width="256" height="256"/>
+        <image name="networking" width="256" height="256"/>
+        <image name="team" width="256" height="256"/>
+        <image name="user" width="256" height="256"/>
     </resources>
 </document>

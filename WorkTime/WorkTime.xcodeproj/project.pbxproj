@@ -20,9 +20,6 @@
 		D77BA809208B99ED005D0E2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D77BA807208B99ED005D0E2E /* Main.storyboard */; };
 		D77BA80B208B99ED005D0E2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D77BA80A208B99ED005D0E2E /* Assets.xcassets */; };
 		D77BA80E208B99ED005D0E2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D77BA80C208B99ED005D0E2E /* LaunchScreen.storyboard */; };
-		D77BA816208B9D30005D0E2E /* networking.png in Resources */ = {isa = PBXBuildFile; fileRef = D77BA815208B9D30005D0E2E /* networking.png */; };
-		D77BA818208B9DCA005D0E2E /* padlock.png in Resources */ = {isa = PBXBuildFile; fileRef = D77BA817208B9DCA005D0E2E /* padlock.png */; };
-		D77BA81A208B9DD0005D0E2E /* login.png in Resources */ = {isa = PBXBuildFile; fileRef = D77BA819208B9DD0005D0E2E /* login.png */; };
 		D77BA81C208C903F005D0E2E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77BA81B208C903F005D0E2E /* RegisterViewController.swift */; };
 		D77BA81E208C95FD005D0E2E /* MainMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77BA81D208C95FD005D0E2E /* MainMasterViewController.swift */; };
 		D77BA820208C9DD4005D0E2E /* ProjectDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77BA81F208C9DD4005D0E2E /* ProjectDetailViewController.swift */; };
@@ -30,11 +27,6 @@
 		D77BA824208CAB90005D0E2E /* AddNewProjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77BA823208CAB90005D0E2E /* AddNewProjectViewController.swift */; };
 		D77BA826208CAF9E005D0E2E /* OrangeCustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77BA825208CAF9E005D0E2E /* OrangeCustomButton.swift */; };
 		D77BA828208CAFBC005D0E2E /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77BA827208CAFBC005D0E2E /* CustomTextField.swift */; };
-		D77BA82A208CB337005D0E2E /* curriculum.png in Resources */ = {isa = PBXBuildFile; fileRef = D77BA829208CB337005D0E2E /* curriculum.png */; };
-		D77BA82C208CB33B005D0E2E /* notepad.png in Resources */ = {isa = PBXBuildFile; fileRef = D77BA82B208CB33B005D0E2E /* notepad.png */; };
-		D77BA82E208CB482005D0E2E /* team.png in Resources */ = {isa = PBXBuildFile; fileRef = D77BA82D208CB482005D0E2E /* team.png */; };
-		D77BA830208CB487005D0E2E /* analytics.png in Resources */ = {isa = PBXBuildFile; fileRef = D77BA82F208CB486005D0E2E /* analytics.png */; };
-		D77BA832208CF122005D0E2E /* user.png in Resources */ = {isa = PBXBuildFile; fileRef = D77BA831208CF122005D0E2E /* user.png */; };
 		D77BA834208CF15A005D0E2E /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77BA833208CF15A005D0E2E /* UserViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -55,9 +47,6 @@
 		D77BA80A208B99ED005D0E2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D77BA80D208B99ED005D0E2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D77BA80F208B99ED005D0E2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D77BA815208B9D30005D0E2E /* networking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = networking.png; sourceTree = "<group>"; };
-		D77BA817208B9DCA005D0E2E /* padlock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = padlock.png; sourceTree = "<group>"; };
-		D77BA819208B9DD0005D0E2E /* login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login.png; sourceTree = "<group>"; };
 		D77BA81B208C903F005D0E2E /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		D77BA81D208C95FD005D0E2E /* MainMasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMasterViewController.swift; sourceTree = "<group>"; };
 		D77BA81F208C9DD4005D0E2E /* ProjectDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectDetailViewController.swift; sourceTree = "<group>"; };
@@ -65,11 +54,6 @@
 		D77BA823208CAB90005D0E2E /* AddNewProjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewProjectViewController.swift; sourceTree = "<group>"; };
 		D77BA825208CAF9E005D0E2E /* OrangeCustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrangeCustomButton.swift; sourceTree = "<group>"; };
 		D77BA827208CAFBC005D0E2E /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
-		D77BA829208CB337005D0E2E /* curriculum.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = curriculum.png; sourceTree = "<group>"; };
-		D77BA82B208CB33B005D0E2E /* notepad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = notepad.png; sourceTree = "<group>"; };
-		D77BA82D208CB482005D0E2E /* team.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = team.png; sourceTree = "<group>"; };
-		D77BA82F208CB486005D0E2E /* analytics.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = analytics.png; sourceTree = "<group>"; };
-		D77BA831208CF122005D0E2E /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = user.png; sourceTree = "<group>"; };
 		D77BA833208CF15A005D0E2E /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
 		E3F0AAD4A91C2FC2CF799EF7 /* Pods-WorkTime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkTime.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WorkTime/Pods-WorkTime.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,6 +87,51 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D74D3FF42092474A0068E49C /* Storyborad */ = {
+			isa = PBXGroup;
+			children = (
+				D77BA807208B99ED005D0E2E /* Main.storyboard */,
+				D74D3FEA209233A10068E49C /* User.storyboard */,
+			);
+			path = Storyborad;
+			sourceTree = "<group>";
+		};
+		D74D3FF6209247630068E49C /* MasterViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D77BA805208B99ED005D0E2E /* ViewController.swift */,
+				D77BA81B208C903F005D0E2E /* RegisterViewController.swift */,
+				D77BA81D208C95FD005D0E2E /* MainMasterViewController.swift */,
+				D77BA81F208C9DD4005D0E2E /* ProjectDetailViewController.swift */,
+				D77BA821208C9E7A005D0E2E /* UserDetailViewController.swift */,
+				D77BA823208CAB90005D0E2E /* AddNewProjectViewController.swift */,
+				D77BA833208CF15A005D0E2E /* UserViewController.swift */,
+				D72A3CF2208E610D00879265 /* AddNewTaskViewController.swift */,
+			);
+			path = MasterViewController;
+			sourceTree = "<group>";
+		};
+		D74D3FF82092479F0068E49C /* CustomClass */ = {
+			isa = PBXGroup;
+			children = (
+				D77BA827208CAFBC005D0E2E /* CustomTextField.swift */,
+				D77BA825208CAF9E005D0E2E /* OrangeCustomButton.swift */,
+				D74D3FE82092324A0068E49C /* WhiteUIView.swift */,
+			);
+			path = CustomClass;
+			sourceTree = "<group>";
+		};
+		D74D3FF9209247B40068E49C /* UserViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D74D3FEE20923C0A0068E49C /* UserProjectDetailViewController.swift */,
+				D74D3FEC209239C00068E49C /* UserMainViewController.swift */,
+				D74D3FF02092411D0068E49C /* UserTaskViewController.swift */,
+				D74D3FF22092456C0068E49C /* UserProfileViewController.swift */,
+			);
+			path = UserViewController;
+			sourceTree = "<group>";
+		};
 		D77BA7F7208B99ED005D0E2E = {
 			isa = PBXGroup;
 			children = (
@@ -125,31 +154,10 @@
 			isa = PBXGroup;
 			children = (
 				D77BA803208B99ED005D0E2E /* AppDelegate.swift */,
-				D77BA805208B99ED005D0E2E /* ViewController.swift */,
-				D77BA81B208C903F005D0E2E /* RegisterViewController.swift */,
-				D77BA81D208C95FD005D0E2E /* MainMasterViewController.swift */,
-				D77BA81F208C9DD4005D0E2E /* ProjectDetailViewController.swift */,
-				D77BA821208C9E7A005D0E2E /* UserDetailViewController.swift */,
-				D77BA823208CAB90005D0E2E /* AddNewProjectViewController.swift */,
-				D77BA833208CF15A005D0E2E /* UserViewController.swift */,
-				D72A3CF2208E610D00879265 /* AddNewTaskViewController.swift */,
-				D77BA827208CAFBC005D0E2E /* CustomTextField.swift */,
-				D77BA825208CAF9E005D0E2E /* OrangeCustomButton.swift */,
-				D74D3FE82092324A0068E49C /* WhiteUIView.swift */,
-				D77BA807208B99ED005D0E2E /* Main.storyboard */,
-				D74D3FEA209233A10068E49C /* User.storyboard */,
-				D74D3FEE20923C0A0068E49C /* UserProjectDetailViewController.swift */,
-				D74D3FEC209239C00068E49C /* UserMainViewController.swift */,
-				D74D3FF02092411D0068E49C /* UserTaskViewController.swift */,
-				D74D3FF22092456C0068E49C /* UserProfileViewController.swift */,
-				D77BA82F208CB486005D0E2E /* analytics.png */,
-				D77BA829208CB337005D0E2E /* curriculum.png */,
-				D77BA831208CF122005D0E2E /* user.png */,
-				D77BA82D208CB482005D0E2E /* team.png */,
-				D77BA82B208CB33B005D0E2E /* notepad.png */,
-				D77BA815208B9D30005D0E2E /* networking.png */,
-				D77BA819208B9DD0005D0E2E /* login.png */,
-				D77BA817208B9DCA005D0E2E /* padlock.png */,
+				D74D3FF42092474A0068E49C /* Storyborad */,
+				D74D3FF6209247630068E49C /* MasterViewController */,
+				D74D3FF82092479F0068E49C /* CustomClass */,
+				D74D3FF9209247B40068E49C /* UserViewController */,
 				D77BA80A208B99ED005D0E2E /* Assets.xcassets */,
 				D77BA80C208B99ED005D0E2E /* LaunchScreen.storyboard */,
 				D77BA80F208B99ED005D0E2E /* Info.plist */,
@@ -217,18 +225,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D77BA82A208CB337005D0E2E /* curriculum.png in Resources */,
-				D77BA82C208CB33B005D0E2E /* notepad.png in Resources */,
-				D77BA82E208CB482005D0E2E /* team.png in Resources */,
-				D77BA832208CF122005D0E2E /* user.png in Resources */,
 				D77BA80E208B99ED005D0E2E /* LaunchScreen.storyboard in Resources */,
 				D74D3FEB209233A10068E49C /* User.storyboard in Resources */,
-				D77BA81A208B9DD0005D0E2E /* login.png in Resources */,
-				D77BA816208B9D30005D0E2E /* networking.png in Resources */,
-				D77BA830208CB487005D0E2E /* analytics.png in Resources */,
 				D77BA80B208B99ED005D0E2E /* Assets.xcassets in Resources */,
 				D77BA809208B99ED005D0E2E /* Main.storyboard in Resources */,
-				D77BA818208B9DCA005D0E2E /* padlock.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
