@@ -8,9 +8,15 @@
 
 import UIKit
 
+protocol HavingWebView {
+    var webView: UIWebView! {get set}
+    func data(_:Data)
+}
+
+
 class ViewController: UIViewController {
 
-    
+    var webView: UIWebView!
     @IBOutlet weak var whiteView: UIView!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
