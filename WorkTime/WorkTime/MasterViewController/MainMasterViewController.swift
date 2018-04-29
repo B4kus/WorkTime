@@ -16,7 +16,8 @@ class MainMasterViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        mainTableView.estimatedRowHeight = 120
+        mainTableView.rowHeight = 120
         
     }
 
@@ -34,7 +35,7 @@ extension MainMasterViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CustomProjectTableViewCell
         return cell
         
     }
