@@ -10,17 +10,21 @@ import UIKit
 import Charts
 
 
+
 class ProjectDetailViewController: UIViewController {
 
     @IBOutlet weak var projectDetailTableView: UITableView!
     @IBOutlet weak var chartView: BarChartView!
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         barChartUpdate()
+       vcToAddViewController()
 
     }
+    
     @IBAction func dissmissVC(segue: UIStoryboardSegue){}
     func barChartUpdate () {
         
@@ -36,8 +40,23 @@ class ProjectDetailViewController: UIViewController {
         chartView.notifyDataSetChanged()
     }
     
+    func vcToAddViewController() {
+        
+        let vc = AddNewTaskViewController()
+        vc.addDelegete = self
+        
+    }
     
-
+    @IBAction func addNewTask(_ sender: Any) {
+        
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        let vc : AddNewTaskViewController = mainStoryboard.instantiateViewController(withIdentifier: "addTask") as! AddNewTaskViewController
+        vc.addDelegete = self
+        self.present(vc, animated: true, completion: nil)
+        
+        
+    }
+    
 }
 
 
@@ -56,4 +75,12 @@ extension ProjectDetailViewController: UITableViewDelegate, UITableViewDataSourc
         return cell
         
     } 
+}
+
+extension ProjectDetailViewController: AddTaskProtocol {
+    func addVC(newData: String) {
+        print("hello")
+        // TO DO add to table and reload data
+    }
+    
 }

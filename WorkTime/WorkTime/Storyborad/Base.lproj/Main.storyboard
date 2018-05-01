@@ -180,7 +180,7 @@
         <!--Add New Task View Controller-->
         <scene sceneID="rJc-ab-LqZ">
             <objects>
-                <viewController id="Php-0I-n06" customClass="AddNewTaskViewController" customModule="WorkTime" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="addTask" id="Php-0I-n06" customClass="AddNewTaskViewController" customModule="WorkTime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BaV-el-JxH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -231,6 +231,9 @@
                                         <state key="normal" title="Dodaj">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="addTaskButton:" destination="Php-0I-n06" eventType="touchUpInside" id="HHk-fY-76T"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -362,7 +365,7 @@
         <!--Dodaj nowy projekt-->
         <scene sceneID="h4B-1g-hNh">
             <objects>
-                <viewController title="Dodaj nowy projekt" id="mRw-wR-Aef" customClass="AddNewProjectViewController" customModule="WorkTime" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddView" title="Dodaj nowy projekt" id="mRw-wR-Aef" customClass="AddNewProjectViewController" customModule="WorkTime" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pPK-6w-L9p">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -551,7 +554,7 @@
                     <navigationItem key="navigationItem" title="Detale projektu" id="Vbf-36-A0I">
                         <barButtonItem key="rightBarButtonItem" title="+" id="Jcv-2A-I0Q">
                             <connections>
-                                <segue destination="Php-0I-n06" kind="presentation" id="1wy-cu-93L"/>
+                                <action selector="addNewTask:" destination="zYr-eF-8dd" id="Wgq-iC-VtP"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

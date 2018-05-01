@@ -37,6 +37,7 @@ class AddNewProjectViewController: UIViewController {
 
     @IBAction func addNewProject(_ sender: Any) {
         addDelegete?.addVC(newData: "tak")
+        dismiss(animated: true, completion: nil)
         
     }
     

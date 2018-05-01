@@ -7,15 +7,20 @@
 //
 
 import UIKit
+protocol AddTaskProtocol {
+    func addVC(newData: String)
+}
 
 class AddNewTaskViewController: UIViewController {
 
     @IBOutlet weak var whiteView: UIView!
+    var addDelegete: AddTaskProtocol?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         
-    
+   
         
      
 //        let blurEffect = UIBlurEffect(style: .dark)
@@ -25,7 +30,14 @@ class AddNewTaskViewController: UIViewController {
         
     }
 
-
+    
+  
+    @IBAction func addTaskButton(_ sender: Any) {
+        
+        addDelegete?.addVC(newData: "oki")
+        dismiss(animated: true, completion: nil)
+    }
+    
 
  
 
