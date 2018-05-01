@@ -8,8 +8,10 @@
 
 import UIKit
 import Charts
+import Social
+import MessageUI
 
-class UserDetailViewController: UIViewController {
+class UserDetailViewController: UIViewController, MFMailComposeViewControllerDelegate {
 
     @IBOutlet weak var userDetailTableView: UITableView!
     @IBOutlet weak var userNameOutlet: UILabel!
@@ -25,7 +27,11 @@ class UserDetailViewController: UIViewController {
         barChartUpdate()
         userImageView.layer.cornerRadius = userImageView.frame.size.width / 2
         
-        
+        phoneOutlet.isUserInteractionEnabled = true;
+        let tap = UITapGestureRecognizer(target: self, action:#selector(self.phoneNumberLabelTap))
+        phoneOutlet.addGestureRecognizer(tap)
+        let tapEmail = UITapGestureRecognizer(target: self, action:#selector(self.emailLabelTap))
+        emailOutlet.addGestureRecognizer(tapEmail)
         
     }
 
@@ -43,9 +49,45 @@ class UserDetailViewController: UIViewController {
     }
     
     
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        
+        if result == .saved {
+            
+        } else if result == .sent {
+            
+        }
+        
+        controller.dismiss(animated: true, completion: nil)
+        
+    }
     
+    @objc func phoneNumberLabelTap() {
+        if let validPhone = phoneOutlet.text?.replacingOccurrences(of: " ", with: "") , let phoneCallURL = URL(string: "tel://\(String(describing: validPhone))") {
+            
+            let application:UIApplication = UIApplication.shared
+            if (application.canOpenURL(phoneCallURL)) {
+                application.open(phoneCallURL, options: [:], completionHandler: nil)
+                
+            }
+        }
+    }
     
-
+    @objc func emailLabelTap() {
+        
+        if MFMailComposeViewController.canSendMail() {
+            
+            let emialVC = MFMailComposeViewController()
+            emialVC.mailComposeDelegate = self
+            if let validEmail = emailOutlet.text {
+                
+                emialVC.setToRecipients(["\(String(describing: validEmail))"])
+                
+            }
+            present(emialVC, animated: true)
+            
+        }
+    
+}
 }
 extension UserDetailViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
