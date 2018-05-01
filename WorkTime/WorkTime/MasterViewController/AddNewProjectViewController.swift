@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol AddDataViewControllerProtocol {
+    func addVC(newData: String)
+}
+
 class AddNewProjectViewController: UIViewController {
 
     
@@ -20,7 +24,7 @@ class AddNewProjectViewController: UIViewController {
     @IBOutlet weak var timeTextField: UITextField!
     @IBOutlet weak var infoTextField: UITextField!
     @IBOutlet weak var addButtonOutlet: UIButton!
-    
+    var addDelegete: AddDataViewControllerProtocol?
     
     
     override func viewDidLoad() {
@@ -31,6 +35,10 @@ class AddNewProjectViewController: UIViewController {
     }
 
 
+    @IBAction func addNewProject(_ sender: Any) {
+        addDelegete?.addVC(newData: "tak")
+        
+    }
     
         
 

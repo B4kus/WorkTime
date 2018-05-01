@@ -347,7 +347,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="+" id="EIH-Kv-v30">
                             <connections>
-                                <segue destination="mRw-wR-Aef" kind="presentation" id="lYQ-3T-wjh"/>
+                                <action selector="addNewProject:" destination="R1i-5L-YuF" id="Fwq-ap-D3n"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -427,6 +427,9 @@
                                         <state key="normal" title="Dodaj">
                                             <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="addNewProject:" destination="mRw-wR-Aef" eventType="touchUpInside" id="qtB-PW-QhR"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

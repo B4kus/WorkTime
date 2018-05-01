@@ -18,11 +18,29 @@ class MainMasterViewController: UIViewController {
         super.viewDidLoad()
         mainTableView.estimatedRowHeight = 120
         mainTableView.rowHeight = 120
-        
+        vcToAddViewController()
     }
 
+    
+    
+    func vcToAddViewController() {
+        
+        let vc = AddNewProjectViewController()
+        vc.addDelegete = self
+        
+    }
+    
    @IBAction func dissmissVC(segue: UIStoryboardSegue){}
     
+    @IBAction func addNewProject(_ sender: Any) {
+        
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        let vc : AddNewProjectViewController = mainStoryboard.instantiateViewController(withIdentifier: "AddView") as! AddNewProjectViewController
+        vc.addDelegete = self
+        self.present(vc, animated: true, completion: nil)
+        
+        
+    }
 }
 
 
@@ -39,4 +57,12 @@ extension MainMasterViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
         
     }
+}
+
+extension MainMasterViewController: AddDataViewControllerProtocol {
+    func addVC(newData: String) {
+        print("hello")
+        // TO DO add to table and reload data
+    }
+ 
 }
