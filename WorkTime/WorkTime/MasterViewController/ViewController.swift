@@ -23,13 +23,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var logInOutlet: UIButton!
     @IBOutlet weak var registerOutlet: UIButton!
     
-    
+   
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
        
-      
+     
     
     }
     
