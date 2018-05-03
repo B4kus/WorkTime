@@ -7,9 +7,9 @@
 //
 
 import UIKit
-
+import RealmSwift
 protocol AddDataViewControllerProtocol {
-    func addVC(newData: String)
+    func addVC(newData: Project)
 }
 
 class AddNewProjectViewController: UIViewController {
@@ -24,6 +24,7 @@ class AddNewProjectViewController: UIViewController {
     @IBOutlet weak var timeTextField: UITextField!
     @IBOutlet weak var infoTextField: UITextField!
     @IBOutlet weak var addButtonOutlet: UIButton!
+    var dataToSave = Project()
     var addDelegete: AddDataViewControllerProtocol?
     
     
@@ -36,11 +37,24 @@ class AddNewProjectViewController: UIViewController {
 
 
     @IBAction func addNewProject(_ sender: Any) {
-        addDelegete?.addVC(newData: "tak")
+        
+//        saveData()
+        addDelegete?.addVC(newData: dataToSave)
         dismiss(animated: true, completion: nil)
         
     }
     
+    func saveData() {
+        
+        dataToSave.project_id = UUID().uuidString
+        dataToSave.name = projectNameTextField.text
+        dataToSave.client = clientTextField.text
+        dataToSave.platform = platformTextField.text
+        dataToSave.time = Int(timeTextField.text!)!
+        dataToSave.api = APITextField.text
+        dataToSave.info = infoTextField.text
+        
+    }
         
 
 }

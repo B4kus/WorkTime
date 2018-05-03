@@ -13,7 +13,7 @@ class MainMasterViewController: UIViewController {
     @IBOutlet weak var mainTableView: UITableView!
     
     
-    
+    var tableData = [Project]()
     override func viewDidLoad() {
         super.viewDidLoad()
         mainTableView.estimatedRowHeight = 120
@@ -47,7 +47,7 @@ class MainMasterViewController: UIViewController {
 extension MainMasterViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 4
+        return tableData.count
         
     }
     
@@ -60,9 +60,12 @@ extension MainMasterViewController: UITableViewDelegate, UITableViewDataSource {
 }
 
 extension MainMasterViewController: AddDataViewControllerProtocol {
-    func addVC(newData: String) {
-        print("hello")
-        // TO DO add to table and reload data
+    func addVC(newData: Project) {
+        //tableData.insert(newData, at: 0)
+        mainTableView.reloadData()
+        
     }
+    
+   
  
 }

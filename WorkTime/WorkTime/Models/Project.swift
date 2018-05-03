@@ -7,9 +7,9 @@
 //
 
 import Foundation
+import RealmSwift
 
-
-public final class Project: NSObject{
+public final class Project: Object {
     
     
     @objc dynamic var name: String?
@@ -32,6 +32,12 @@ public final class Project: NSObject{
         static let info = "info"
         static let extraInfo = "extraInfo"
         static let project_id = "project_id"
+        
+    }
+    
+    override public static func primaryKey() -> String? {
+        
+        return "project_id"
         
     }
     
