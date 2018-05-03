@@ -35,7 +35,7 @@ class RegisterViewController: UIViewController {
             self.present(alert, animated: true, completion: nil)
             
             
-        } else if (emailTextField.text != repEmailTextField.text) {
+        } else if ((emailTextField.text != repEmailTextField.text)) {
             
             let alert = UIAlertController(title: "Błąd!", message: "Adresy e-mail nie są takie same.", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
@@ -53,6 +53,13 @@ class RegisterViewController: UIViewController {
             alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
             self.present(alert, animated: true, completion: nil)
          
+        } else if !(emailTextField.text?.contains("@"))! && !(repEmailTextField.text?.contains("@"))! {
+            
+            let alert = UIAlertController(title: "Błąd!", message: "Nie poprawny foramt adresu email", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+    
+            
         } else {
             
             print("good")
