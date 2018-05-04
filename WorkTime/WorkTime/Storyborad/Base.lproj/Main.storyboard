@@ -203,13 +203,6 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Czas" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VyP-yi-kpw" customClass="CustomTextField" customModule="WorkTime" customModuleProvider="target">
-                                        <rect key="frame" x="20" y="125" width="200" height="40"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Priorytet" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eoY-44-qUX" customClass="CustomTextField" customModule="WorkTime" customModuleProvider="target">
                                         <rect key="frame" x="20" y="173" width="200" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -235,6 +228,13 @@
                                             <action selector="addTaskButton:" destination="Php-0I-n06" eventType="touchUpInside" id="HHk-fY-76T"/>
                                         </connections>
                                     </button>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Czas" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VyP-yi-kpw" customClass="CustomTextField" customModule="WorkTime" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="125" width="200" height="40"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
@@ -261,6 +261,11 @@
                         <viewLayoutGuide key="safeArea" id="VTX-GL-wGm"/>
                     </view>
                     <connections>
+                        <outlet property="infoTextField" destination="TfD-fC-I0I" id="RF5-St-0G8"/>
+                        <outlet property="personTextField" destination="Uz8-9N-3Zn" id="fQn-W1-bhu"/>
+                        <outlet property="priorityTextField" destination="eoY-44-qUX" id="L9d-0f-VC3"/>
+                        <outlet property="taskTextField" destination="Did-qj-Qlu" id="v59-Hi-FpL"/>
+                        <outlet property="timeTextField" destination="VyP-yi-kpw" id="UbB-Yi-cPA"/>
                         <outlet property="whiteView" destination="oEb-Bo-Bwg" id="hpz-8t-U1q"/>
                     </connections>
                 </viewController>

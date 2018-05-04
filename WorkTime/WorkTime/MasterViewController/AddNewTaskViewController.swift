@@ -14,31 +14,35 @@ protocol AddTaskProtocol {
 class AddNewTaskViewController: UIViewController {
 
     @IBOutlet weak var whiteView: UIView!
+    @IBOutlet weak var personTextField: CustomTextField!
+    @IBOutlet weak var taskTextField: CustomTextField!
+    @IBOutlet weak var timeTextField: CustomTextField!
+    @IBOutlet weak var priorityTextField: CustomTextField!
+    @IBOutlet weak var infoTextField: CustomTextField!
     var addDelegete: AddTaskProtocol?
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         
-   
-        
-     
-//        let blurEffect = UIBlurEffect(style: .dark)
-//        let blurEffectView = UIVisualEffectView(effect: blurEffect)
-//        blurEffectView.frame = self.view.frame
-//        self.view.insertSubview(blurEffectView, at: 0)
-        
     }
 
-    
+    func saveData() {
+        
+        personTextField.text = "Model"
+        taskTextField.text = "Model"
+        timeTextField.text = "Model"
+        priorityTextField.text = "Model"
+        infoTextField.text = "Model"
+        
+    }
   
     @IBAction func addTaskButton(_ sender: Any) {
         
+        //saveData()
         addDelegete?.addVC(newData: "oki")
         dismiss(animated: true, completion: nil)
     }
     
-
- 
 
 }

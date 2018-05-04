@@ -17,6 +17,10 @@
 		D74D3FF32092456C0068E49C /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74D3FF22092456C0068E49C /* UserProfileViewController.swift */; };
 		D74D3FFB20931E6B0068E49C /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74D3FFA20931E6B0068E49C /* DownloadManager.swift */; };
 		D74D40012095F90C0068E49C /* CustomProjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74D40002095F90C0068E49C /* CustomProjectTableViewCell.swift */; };
+		D753EC8A209858B300AF4FA9 /* CustomProjectUserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D753EC89209858B300AF4FA9 /* CustomProjectUserTableViewCell.swift */; };
+		D753EC8C20985B8A00AF4FA9 /* CustomUserTaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D753EC8B20985B8A00AF4FA9 /* CustomUserTaskTableViewCell.swift */; };
+		D753EC912098722300AF4FA9 /* Project.swift in Sources */ = {isa = PBXBuildFile; fileRef = D753EC902098722300AF4FA9 /* Project.swift */; };
+		D753EC93209AFF8000AF4FA9 /* DBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D753EC92209AFF8000AF4FA9 /* DBManager.swift */; };
 		D77BA804208B99ED005D0E2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77BA803208B99ED005D0E2E /* AppDelegate.swift */; };
 		D77BA806208B99ED005D0E2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D77BA805208B99ED005D0E2E /* ViewController.swift */; };
 		D77BA809208B99ED005D0E2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D77BA807208B99ED005D0E2E /* Main.storyboard */; };
@@ -44,6 +48,10 @@
 		D74D3FF22092456C0068E49C /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
 		D74D3FFA20931E6B0068E49C /* DownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
 		D74D40002095F90C0068E49C /* CustomProjectTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProjectTableViewCell.swift; sourceTree = "<group>"; };
+		D753EC89209858B300AF4FA9 /* CustomProjectUserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProjectUserTableViewCell.swift; sourceTree = "<group>"; };
+		D753EC8B20985B8A00AF4FA9 /* CustomUserTaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomUserTaskTableViewCell.swift; sourceTree = "<group>"; };
+		D753EC902098722300AF4FA9 /* Project.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Project.swift; sourceTree = "<group>"; };
+		D753EC92209AFF8000AF4FA9 /* DBManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBManager.swift; sourceTree = "<group>"; };
 		D77BA800208B99ED005D0E2E /* WorkTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D77BA803208B99ED005D0E2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D77BA805208B99ED005D0E2E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -111,7 +119,9 @@
 				D77BA821208C9E7A005D0E2E /* UserDetailViewController.swift */,
 				D77BA823208CAB90005D0E2E /* AddNewProjectViewController.swift */,
 				D77BA833208CF15A005D0E2E /* UserViewController.swift */,
+				D753EC8B20985B8A00AF4FA9 /* CustomUserTaskTableViewCell.swift */,
 				D72A3CF2208E610D00879265 /* AddNewTaskViewController.swift */,
+				D753EC89209858B300AF4FA9 /* CustomProjectUserTableViewCell.swift */,
 			);
 			path = MasterViewController;
 			sourceTree = "<group>";
@@ -121,6 +131,7 @@
 			children = (
 				D74D3FFA20931E6B0068E49C /* DownloadManager.swift */,
 				D77BA827208CAFBC005D0E2E /* CustomTextField.swift */,
+				D753EC92209AFF8000AF4FA9 /* DBManager.swift */,
 				D77BA825208CAF9E005D0E2E /* OrangeCustomButton.swift */,
 				D74D3FE82092324A0068E49C /* WhiteUIView.swift */,
 			);
@@ -136,6 +147,14 @@
 				D74D3FF22092456C0068E49C /* UserProfileViewController.swift */,
 			);
 			path = UserViewController;
+			sourceTree = "<group>";
+		};
+		D753EC8F209871E800AF4FA9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D753EC902098722300AF4FA9 /* Project.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		D77BA7F7208B99ED005D0E2E = {
@@ -163,6 +182,7 @@
 				D74D3FF42092474A0068E49C /* Storyborad */,
 				D74D3FF6209247630068E49C /* MasterViewController */,
 				D74D3FF82092479F0068E49C /* CustomClass */,
+				D753EC8F209871E800AF4FA9 /* Models */,
 				D74D3FF9209247B40068E49C /* UserViewController */,
 				D77BA80A208B99ED005D0E2E /* Assets.xcassets */,
 				D77BA80C208B99ED005D0E2E /* LaunchScreen.storyboard */,
@@ -291,8 +311,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D77BA81C208C903F005D0E2E /* RegisterViewController.swift in Sources */,
+				D753EC8A209858B300AF4FA9 /* CustomProjectUserTableViewCell.swift in Sources */,
 				D72A3CF3208E610D00879265 /* AddNewTaskViewController.swift in Sources */,
 				D74D3FF12092411D0068E49C /* UserTaskViewController.swift in Sources */,
+				D753EC8C20985B8A00AF4FA9 /* CustomUserTaskTableViewCell.swift in Sources */,
+				D753EC912098722300AF4FA9 /* Project.swift in Sources */,
 				D77BA834208CF15A005D0E2E /* UserViewController.swift in Sources */,
 				D77BA820208C9DD4005D0E2E /* ProjectDetailViewController.swift in Sources */,
 				D77BA822208C9E7A005D0E2E /* UserDetailViewController.swift in Sources */,
@@ -308,6 +331,7 @@
 				D74D3FED209239C10068E49C /* UserMainViewController.swift in Sources */,
 				D74D3FE92092324A0068E49C /* WhiteUIView.swift in Sources */,
 				D77BA828208CAFBC005D0E2E /* CustomTextField.swift in Sources */,
+				D753EC93209AFF8000AF4FA9 /* DBManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
