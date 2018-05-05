@@ -25,8 +25,7 @@ class UserDetailViewController: UIViewController, MFMailComposeViewControllerDel
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        barChartUpdate()
+       
         userImageView.layer.cornerRadius = userImageView.frame.size.width / 2
         
         phoneOutlet.isUserInteractionEnabled = true;
@@ -44,20 +43,22 @@ class UserDetailViewController: UIViewController, MFMailComposeViewControllerDel
             userNameOutlet.text = k.name
             
         }
+        barChartUpdate()
         
         
     }
 
     func barChartUpdate () {
         
-        let entry1 = BarChartDataEntry(x: 1.0, y: Double(100))
-        let entry2 = BarChartDataEntry(x: 2.0, y: Double(68))
-        let entry3 = BarChartDataEntry(x: 3.0, y: Double(10))
-        let dataSet = BarChartDataSet(values: [entry1, entry2, entry3], label: "Widgets Type")
-        let data = BarChartData(dataSets: [dataSet])
-        
-        chartView.chartDescription?.text = ""
-        chartView.data = data
+        var dataEntries: [BarChartDataEntry] = []
+        for i in 0..<newData.count {
+            let dataEntry = BarChartDataEntry(x: Double(i), y: Double(21 + i))
+            dataEntries.append(dataEntry)
+            
+        }
+        let chartDataSet = BarChartDataSet(values: dataEntries, label: "Visitor count")
+        let chartData = BarChartData(dataSet: chartDataSet)
+        chartView.data = chartData
         chartView.notifyDataSetChanged()
     }
     
@@ -109,7 +110,6 @@ class UserDetailViewController: UIViewController, MFMailComposeViewControllerDel
 
 extension UserDetailViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        print(newData.count)
         return newData.count
         
     }

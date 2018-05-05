@@ -18,12 +18,11 @@ class ProjectDetailViewController: UIViewController {
     
     var dataTable = [Task]()
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        barChartUpdate()
+        
         vcToAddViewController()
+        
         
     }
     
