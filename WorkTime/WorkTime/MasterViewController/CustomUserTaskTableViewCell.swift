@@ -16,6 +16,11 @@ class CustomUserTaskTableViewCell: UITableViewCell {
     @IBOutlet weak var timeLabel: UILabel!
     
     
-    
+    func setUpData(data: Task) {
+        
+        taskLabel.text = data.task
+        
+        
+    }
 
 }

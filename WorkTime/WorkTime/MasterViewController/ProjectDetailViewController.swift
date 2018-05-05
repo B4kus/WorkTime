@@ -19,6 +19,7 @@ class ProjectDetailViewController: UIViewController {
     var dataTable = [Task]()
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         barChartUpdate()
@@ -47,6 +48,19 @@ class ProjectDetailViewController: UIViewController {
         vc.addDelegete = self
         
     }
+    func userData() -> [Task] {
+        var filterData = [Task]()
+        let cell = projectDetailTableView.cellForRow(at: projectDetailTableView.indexPathForSelectedRow!) as! CustomProjectUserTableViewCell
+        for data in dataTable {
+            
+            if data.name == cell.userNameLabel.text {
+                
+                filterData.append(data)
+            }
+            
+        }
+        return filterData
+    }
     
     @IBAction func addNewTask(_ sender: Any) {
         
@@ -57,6 +71,17 @@ class ProjectDetailViewController: UIViewController {
         
         
     }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        
+        if let detailVC = segue.destination as? UserDetailViewController {
+            let data = userData()
+            detailVC.setUpData(newData: data)
+
+        }
+        
+    }
+    
     
 }
 

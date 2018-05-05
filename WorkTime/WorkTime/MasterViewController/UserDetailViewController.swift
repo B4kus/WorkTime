@@ -20,6 +20,8 @@ class UserDetailViewController: UIViewController, MFMailComposeViewControllerDel
     @IBOutlet weak var userImageView: UIImageView!
     @IBOutlet weak var chartView: BarChartView!
     
+    var newData = [Task]()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +34,17 @@ class UserDetailViewController: UIViewController, MFMailComposeViewControllerDel
         phoneOutlet.addGestureRecognizer(tap)
         let tapEmail = UITapGestureRecognizer(target: self, action:#selector(self.emailLabelTap))
         emailOutlet.addGestureRecognizer(tapEmail)
+        userDetailTableView.reloadData()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        for k in newData {
+            
+            userNameOutlet.text = k.name
+            
+        }
+        
         
     }
 
@@ -48,7 +61,11 @@ class UserDetailViewController: UIViewController, MFMailComposeViewControllerDel
         chartView.notifyDataSetChanged()
     }
     
-    
+    func setUpData(newData: [Task]) {
+        
+        self.newData = newData
+        
+    }
     func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
         
         if result == .saved {
@@ -86,17 +103,21 @@ class UserDetailViewController: UIViewController, MFMailComposeViewControllerDel
             present(emialVC, animated: true)
             
         }
-    
+        
+    }
 }
-}
+
 extension UserDetailViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        print(newData.count)
+        return newData.count
+        
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "userCell", for: indexPath)
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "userCell", for: indexPath) as! CustomUserTaskTableViewCell
+        let dataToUse = newData[indexPath.row]
+        cell.setUpData(data: dataToUse)
         return cell
     }
   
