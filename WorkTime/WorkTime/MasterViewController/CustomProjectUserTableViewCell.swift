@@ -16,5 +16,13 @@ class CustomProjectUserTableViewCell: UITableViewCell {
     @IBOutlet weak var taskProgressView: UIProgressView!
     
     
+    func setText(projectData: Task)  {
+        
+        userNameLabel.text = projectData.name
+        numberOfTasksLabel.text = "4"
+        taskProgressView.progress = Float(projectData.time)
+        percentOfCompletedTaskLabel.text = String(taskProgressView.progress * 100)
+        
+    }
 
 }

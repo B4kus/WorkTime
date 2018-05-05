@@ -8,7 +8,7 @@
 
 import UIKit
 protocol AddTaskProtocol {
-    func addVC(newData: String)
+    func addVC(newData: Task)
 }
 
 class AddNewTaskViewController: UIViewController {
@@ -19,7 +19,10 @@ class AddNewTaskViewController: UIViewController {
     @IBOutlet weak var timeTextField: CustomTextField!
     @IBOutlet weak var priorityTextField: CustomTextField!
     @IBOutlet weak var infoTextField: CustomTextField!
+    
+    
     var addDelegete: AddTaskProtocol?
+    var dataToSave = Task()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,18 +32,18 @@ class AddNewTaskViewController: UIViewController {
 
     func saveData() {
         
-        personTextField.text = "Model"
-        taskTextField.text = "Model"
-        timeTextField.text = "Model"
-        priorityTextField.text = "Model"
-        infoTextField.text = "Model"
+        dataToSave.name = personTextField.text
+        dataToSave.task =  taskTextField.text
+        dataToSave.time =  Int(timeTextField.text!)!
+        dataToSave.priority = priorityTextField.text
+        dataToSave.extraInfo =  infoTextField.text
         
     }
   
     @IBAction func addTaskButton(_ sender: Any) {
         
-        //saveData()
-        addDelegete?.addVC(newData: "oki")
+        saveData()
+        addDelegete?.addVC(newData: dataToSave)
         dismiss(animated: true, completion: nil)
     }
     

@@ -16,27 +16,28 @@ class ProjectDetailViewController: UIViewController {
     @IBOutlet weak var projectDetailTableView: UITableView!
     @IBOutlet weak var chartView: BarChartView!
     
+    var dataTable = [Task]()
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         barChartUpdate()
-       vcToAddViewController()
-
+        vcToAddViewController()
+        
     }
     
     @IBAction func dissmissVC(segue: UIStoryboardSegue){}
+    
     func barChartUpdate () {
-        
-        let entry1 = BarChartDataEntry(x: 1.0, y: Double(12))
-        let entry2 = BarChartDataEntry(x: 2.0, y: Double(43))
-        let entry3 = BarChartDataEntry(x: 3.0, y: Double(83))
-        let dataSet = BarChartDataSet(values: [entry1, entry2, entry3], label: "Widgets Type")
-        let data = BarChartData(dataSets: [dataSet])
-        
-        
-        chartView.chartDescription?.text = ""
-        chartView.data = data
+        var dataEntries: [BarChartDataEntry] = []
+        for i in 0..<dataTable.count {
+            let dataEntry = BarChartDataEntry(x: Double(i), y: Double(21 + i))
+            dataEntries.append(dataEntry)
+            
+        }
+        let chartDataSet = BarChartDataSet(values: dataEntries, label: "Visitor count")
+        let chartData = BarChartData(dataSet: chartDataSet)
+        chartView.data = chartData
         chartView.notifyDataSetChanged()
     }
     
@@ -64,23 +65,26 @@ class ProjectDetailViewController: UIViewController {
 extension ProjectDetailViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return 4
+        return dataTable.count
         
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "detailCell", for: indexPath)
-        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "detailCell", for: indexPath) as! CustomProjectUserTableViewCell
+        let data = dataTable[indexPath.row]
+        cell.setText(projectData: data)
         return cell
         
     } 
 }
 
 extension ProjectDetailViewController: AddTaskProtocol {
-    func addVC(newData: String) {
-        print("hello")
-        // TO DO add to table and reload data
+    func addVC(newData: Task) {
+        dataTable.insert(newData, at: 0)
+        barChartUpdate()
+        projectDetailTableView.reloadData()
+        
     }
     
 }
