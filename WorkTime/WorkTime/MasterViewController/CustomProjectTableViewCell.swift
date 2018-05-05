@@ -16,4 +16,15 @@ class CustomProjectTableViewCell: UITableViewCell {
     @IBOutlet weak var projectPercent: UILabel!
     @IBOutlet weak var projectProgressView: UIProgressView!
     
+    
+    
+    func setText(projectData: Project) {
+    
+        projectName.text = projectData.name
+        statusLabel.text = "Aktywne"
+        projectProgressView.progress = Float(projectData.time)
+        projectPercent.text = String(projectProgressView.progress * 100)
+    
+    }
+    
 }

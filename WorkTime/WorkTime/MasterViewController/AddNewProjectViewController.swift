@@ -38,7 +38,7 @@ class AddNewProjectViewController: UIViewController {
 
     @IBAction func addNewProject(_ sender: Any) {
         
-//        saveData()
+        saveData()
         addDelegete?.addVC(newData: dataToSave)
         dismiss(animated: true, completion: nil)
         

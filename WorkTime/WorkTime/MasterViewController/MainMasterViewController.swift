@@ -54,6 +54,8 @@ extension MainMasterViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CustomProjectTableViewCell
+        let data = tableData[indexPath.row]
+        cell.setText(projectData: data)
         return cell
         
     }
@@ -61,7 +63,7 @@ extension MainMasterViewController: UITableViewDelegate, UITableViewDataSource {
 
 extension MainMasterViewController: AddDataViewControllerProtocol {
     func addVC(newData: Project) {
-        //tableData.insert(newData, at: 0)
+        tableData.insert(newData, at: 0)
         mainTableView.reloadData()
         
     }
