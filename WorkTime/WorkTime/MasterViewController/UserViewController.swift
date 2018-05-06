@@ -12,11 +12,18 @@ class UserViewController: UIViewController {
 
     @IBOutlet weak var whiteView: UIView!
     @IBOutlet weak var profilePictureImageView: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var emailLabel: UILabel!
+    @IBOutlet weak var passwordLabel: UILabel!
+    @IBOutlet weak var phoneNumberLabel: UILabel!
+    
+    var userData = User()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-       UserViewConfiguration()
+        UserViewConfiguration()
+        setUpView(data: userData)
         
     }
 
@@ -27,4 +34,21 @@ class UserViewController: UIViewController {
         
         
     }
+    
+    func setUpData(userData: User) {
+    
+        self.userData = userData
+    
+    }
+    
+    func setUpView(data: User) {
+        
+        nameLabel.text = data.name
+        emailLabel.text = data.email
+        passwordLabel.text = data.password
+        phoneNumberLabel.text = data.phone
+        
+    }
+    
+    
 }

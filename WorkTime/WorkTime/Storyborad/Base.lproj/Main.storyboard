@@ -169,6 +169,10 @@
                         <viewLayoutGuide key="safeArea" id="bwi-oa-gOx"/>
                     </view>
                     <connections>
+                        <outlet property="emailLabel" destination="6NZ-b3-NQV" id="TaQ-Ye-r9O"/>
+                        <outlet property="nameLabel" destination="Mo2-8d-bmK" id="zYe-EC-1UZ"/>
+                        <outlet property="passwordLabel" destination="cIo-XQ-FlQ" id="u5w-jO-Qn9"/>
+                        <outlet property="phoneNumberLabel" destination="cjC-y5-OvV" id="lB7-5R-mSx"/>
                         <outlet property="profilePictureImageView" destination="bSW-js-Mhn" id="ezv-zc-0kI"/>
                         <outlet property="whiteView" destination="SJa-Nd-RrH" id="TSt-hS-Vby"/>
                     </connections>

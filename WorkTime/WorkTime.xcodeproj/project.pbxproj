@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D18DFCB73F059BF4E3AC3D39 /* Pods_WorkTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEBD30D29777EBA981219B46 /* Pods_WorkTime.framework */; };
+		D705E64B209F27C0001F5E26 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D705E64A209F27C0001F5E26 /* User.swift */; };
 		D72A3CF3208E610D00879265 /* AddNewTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D72A3CF2208E610D00879265 /* AddNewTaskViewController.swift */; };
 		D74D3FE92092324A0068E49C /* WhiteUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74D3FE82092324A0068E49C /* WhiteUIView.swift */; };
 		D74D3FEB209233A10068E49C /* User.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D74D3FEA209233A10068E49C /* User.storyboard */; };
@@ -40,6 +41,7 @@
 /* Begin PBXFileReference section */
 		9328E3A65E1BDF46C7A68DEB /* Pods-WorkTime.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkTime.release.xcconfig"; path = "Pods/Target Support Files/Pods-WorkTime/Pods-WorkTime.release.xcconfig"; sourceTree = "<group>"; };
 		BEBD30D29777EBA981219B46 /* Pods_WorkTime.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WorkTime.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D705E64A209F27C0001F5E26 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D72A3CF2208E610D00879265 /* AddNewTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewTaskViewController.swift; sourceTree = "<group>"; };
 		D74D3FE82092324A0068E49C /* WhiteUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhiteUIView.swift; sourceTree = "<group>"; };
 		D74D3FEA209233A10068E49C /* User.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = User.storyboard; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 			children = (
 				D753EC902098722300AF4FA9 /* Project.swift */,
 				D7630F65209DBCA500D3D38A /* Task.swift */,
+				D705E64A209F27C0001F5E26 /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 				D77BA826208CAF9E005D0E2E /* OrangeCustomButton.swift in Sources */,
 				D77BA804208B99ED005D0E2E /* AppDelegate.swift in Sources */,
 				D74D3FED209239C10068E49C /* UserMainViewController.swift in Sources */,
+				D705E64B209F27C0001F5E26 /* User.swift in Sources */,
 				D74D3FE92092324A0068E49C /* WhiteUIView.swift in Sources */,
 				D77BA828208CAFBC005D0E2E /* CustomTextField.swift in Sources */,
 				D753EC93209AFF8000AF4FA9 /* DBManager.swift in Sources */,
