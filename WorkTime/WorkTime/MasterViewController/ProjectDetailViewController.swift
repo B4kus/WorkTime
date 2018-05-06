@@ -37,8 +37,9 @@ class ProjectDetailViewController: UIViewController {
             
         }
         
-        let chartDataSet = BarChartDataSet(values: dataEntries, label: "Visitor count")
+        let chartDataSet = BarChartDataSet(values: dataEntries, label: "Zadana")
         let chartData = BarChartData(dataSet: chartDataSet)
+        chartView.chartDescription?.text = "Zadania"
         chartView.data = chartData
         chartView.notifyDataSetChanged()
     }

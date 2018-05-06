@@ -57,8 +57,9 @@ class UserDetailViewController: UIViewController, MFMailComposeViewControllerDel
             dataEntries.append(dataEntry)
             
         }
-        let chartDataSet = BarChartDataSet(values: dataEntries, label: "Visitor count")
+        let chartDataSet = BarChartDataSet(values: dataEntries, label: "Zadania")
         let chartData = BarChartData(dataSet: chartDataSet)
+        chartView.chartDescription?.text = "Twoje aktulane zadania w projekcie "
         chartView.data = chartData
         chartView.notifyDataSetChanged()
     }
