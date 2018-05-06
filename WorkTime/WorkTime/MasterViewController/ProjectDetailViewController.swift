@@ -22,23 +22,33 @@ class ProjectDetailViewController: UIViewController {
         super.viewDidLoad()
         
         vcToAddViewController()
-        
-        
     }
     
     @IBAction func dissmissVC(segue: UIStoryboardSegue){}
     
     func barChartUpdate () {
+        
         var dataEntries: [BarChartDataEntry] = []
+        let timeValue = time()
         for i in 0..<dataTable.count {
-            let dataEntry = BarChartDataEntry(x: Double(i), y: Double(21 + i))
+            
+            let dataEntry = BarChartDataEntry(x: Double(i), y: Double(timeValue[i]))
             dataEntries.append(dataEntry)
             
         }
+        
         let chartDataSet = BarChartDataSet(values: dataEntries, label: "Visitor count")
         let chartData = BarChartData(dataSet: chartDataSet)
         chartView.data = chartData
         chartView.notifyDataSetChanged()
+    }
+    func time() -> [Int] {
+        var time = [Int]()
+        for k in dataTable {
+            
+            time.append(k.time)
+        }
+        return time
     }
     
     func vcToAddViewController() {
@@ -56,8 +66,8 @@ class ProjectDetailViewController: UIViewController {
                 
                 filterData.append(data)
             }
-            
         }
+        
         return filterData
     }
     
@@ -71,17 +81,13 @@ class ProjectDetailViewController: UIViewController {
         
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-        
+    
         if let detailVC = segue.destination as? UserDetailViewController {
             let data = userData()
             detailVC.setUpData(newData: data)
 
         }
-        
     }
-    
-    
 }
 
 
@@ -98,6 +104,7 @@ extension ProjectDetailViewController: UITableViewDelegate, UITableViewDataSourc
         let cell = tableView.dequeueReusableCell(withIdentifier: "detailCell", for: indexPath) as! CustomProjectUserTableViewCell
         let data = dataTable[indexPath.row]
         cell.setText(projectData: data)
+        cell.progresValue(projectData: data)
         return cell
         
     } 

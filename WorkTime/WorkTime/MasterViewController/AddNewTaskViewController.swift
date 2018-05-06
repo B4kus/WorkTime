@@ -32,7 +32,7 @@ class AddNewTaskViewController: UIViewController, UITextFieldDelegate {
         priorityTextField.inputView = thePicker
         thePicker.delegate = self
         priorityTextField.delegate = self
-        timeTextField.delegate = self
+
         
     }
 

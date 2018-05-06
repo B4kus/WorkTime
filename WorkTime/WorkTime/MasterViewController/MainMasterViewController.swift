@@ -16,9 +16,10 @@ class MainMasterViewController: UIViewController {
     var tableData = [Project]()
     override func viewDidLoad() {
         super.viewDidLoad()
-        mainTableView.estimatedRowHeight = 120
-        mainTableView.rowHeight = 120
+        mainTableView.estimatedRowHeight = 90
+        mainTableView.rowHeight = 90
         vcToAddViewController()
+        
     }
 
     
@@ -56,6 +57,8 @@ extension MainMasterViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CustomProjectTableViewCell
         let data = tableData[indexPath.row]
         cell.setText(projectData: data)
+        cell.progresValue(projectData: data)
+        cell.selectionStyle = .none
         return cell
         
     }

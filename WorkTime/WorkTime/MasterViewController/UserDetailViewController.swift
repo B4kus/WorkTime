@@ -51,8 +51,9 @@ class UserDetailViewController: UIViewController, MFMailComposeViewControllerDel
     func barChartUpdate () {
         
         var dataEntries: [BarChartDataEntry] = []
+        let validTime = time()
         for i in 0..<newData.count {
-            let dataEntry = BarChartDataEntry(x: Double(i), y: Double(21 + i))
+            let dataEntry = BarChartDataEntry(x: Double(i), y: Double(validTime[i]))
             dataEntries.append(dataEntry)
             
         }
@@ -60,6 +61,15 @@ class UserDetailViewController: UIViewController, MFMailComposeViewControllerDel
         let chartData = BarChartData(dataSet: chartDataSet)
         chartView.data = chartData
         chartView.notifyDataSetChanged()
+    }
+    
+    func time() -> [Int] {
+        var time = [Int]()
+        for k in newData {
+            
+            time.append(k.time)
+        }
+        return time
     }
     
     func setUpData(newData: [Task]) {
@@ -118,6 +128,7 @@ extension UserDetailViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "userCell", for: indexPath) as! CustomUserTaskTableViewCell
         let dataToUse = newData[indexPath.row]
         cell.setUpData(data: dataToUse)
+        
         return cell
     }
   

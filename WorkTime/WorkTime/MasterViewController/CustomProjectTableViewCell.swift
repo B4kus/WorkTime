@@ -22,9 +22,20 @@ class CustomProjectTableViewCell: UITableViewCell {
     
         projectName.text = projectData.name
         statusLabel.text = "Aktywne"
-        projectProgressView.progress = Float(projectData.time)
-        projectPercent.text = String(projectProgressView.progress * 100)
     
+    }
+    
+    func progresValue(projectData: Project) {
+        
+        let transform = CGAffineTransform(scaleX: 1.0, y: 0.5)
+        projectProgressView.transform = transform;
+        let time = Float(projectData.time) * 60
+        let timePassed: Float = 260
+        let value = (timePassed * 100) / time
+        projectProgressView.setProgress(value / 100 , animated: true)
+        projectPercent.text = String(value.rounded()) + "%"
+        
+        
     }
     
 }

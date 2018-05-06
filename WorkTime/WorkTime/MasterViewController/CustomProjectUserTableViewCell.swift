@@ -19,10 +19,19 @@ class CustomProjectUserTableViewCell: UITableViewCell {
     func setText(projectData: Task)  {
         
         userNameLabel.text = projectData.name
-        numberOfTasksLabel.text = "4"
-        taskProgressView.progress = Float(projectData.time)
-        percentOfCompletedTaskLabel.text = String(taskProgressView.progress * 100)
+        numberOfTasksLabel.text = projectData.priority
+      
+    }
+    
+    func progresValue(projectData: Task) {
+        
+       
+        let time = Float(projectData.time) * 60
+        let timePassed: Float = 45
+        let value = (timePassed * 100) / time
+        taskProgressView.setProgress(value / 100 , animated: true)
+        percentOfCompletedTaskLabel.text = String(value.rounded()) + "%"
+        
         
     }
-
 }
