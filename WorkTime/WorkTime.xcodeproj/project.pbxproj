@@ -117,11 +117,11 @@
 				D77BA81B208C903F005D0E2E /* RegisterViewController.swift */,
 				D77BA81D208C95FD005D0E2E /* MainMasterViewController.swift */,
 				D74D40002095F90C0068E49C /* CustomProjectTableViewCell.swift */,
-				D77BA823208CAB90005D0E2E /* AddNewProjectViewController.swift */,
 				D77BA81F208C9DD4005D0E2E /* ProjectDetailViewController.swift */,
 				D77BA821208C9E7A005D0E2E /* UserDetailViewController.swift */,
 				D77BA833208CF15A005D0E2E /* UserViewController.swift */,
 				D753EC8B20985B8A00AF4FA9 /* CustomUserTaskTableViewCell.swift */,
+				D77BA823208CAB90005D0E2E /* AddNewProjectViewController.swift */,
 				D72A3CF2208E610D00879265 /* AddNewTaskViewController.swift */,
 				D753EC89209858B300AF4FA9 /* CustomProjectUserTableViewCell.swift */,
 			);

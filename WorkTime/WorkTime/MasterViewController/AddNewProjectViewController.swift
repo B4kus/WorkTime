@@ -12,7 +12,7 @@ protocol AddDataViewControllerProtocol {
     func addVC(newData: Project)
 }
 
-class AddNewProjectViewController: UIViewController {
+class AddNewProjectViewController: UIViewController, UITextFieldDelegate {
 
     
     
@@ -31,7 +31,8 @@ class AddNewProjectViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-      
+        
+      timeTextField.delegate = self
     
     }
 
@@ -44,6 +45,13 @@ class AddNewProjectViewController: UIViewController {
         
     }
     
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let allowedNumbers = CharacterSet.decimalDigits
+        let characterSet = CharacterSet(charactersIn: string)
+        return  allowedNumbers.isSuperset(of: characterSet)
+        
+        
+    }
     func saveData() {
         
         dataToSave.project_id = UUID().uuidString

@@ -433,6 +433,9 @@
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="mRw-wR-Aef" id="vLo-Yc-U44"/>
+                                        </connections>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Inne" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SC4-w0-zd0" customClass="CustomTextField" customModule="WorkTime" customModuleProvider="target">
                                         <rect key="frame" x="20" y="248" width="200" height="40"/>

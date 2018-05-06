@@ -32,6 +32,7 @@ class AddNewTaskViewController: UIViewController, UITextFieldDelegate {
         priorityTextField.inputView = thePicker
         thePicker.delegate = self
         priorityTextField.delegate = self
+        timeTextField.delegate = self
         
     }
 
@@ -45,6 +46,7 @@ class AddNewTaskViewController: UIViewController, UITextFieldDelegate {
         
     }
     
+
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         return false
     }
