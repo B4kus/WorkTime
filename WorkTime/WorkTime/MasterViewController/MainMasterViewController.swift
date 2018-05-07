@@ -13,24 +13,20 @@ class MainMasterViewController: UIViewController {
     @IBOutlet weak var mainTableView: UITableView!
     
     
+    
+    let dataBase = DBManager()
     var tableData = [Project]()
+    
     override func viewDidLoad() {
+        
         super.viewDidLoad()
         mainTableView.estimatedRowHeight = 90
         mainTableView.rowHeight = 90
-        vcToAddViewController()
+        let dataFromRealm = dataBase.getObjects(type: Project.self)
+        tableData = Array(dataFromRealm!) as! [Project]
         
     }
 
-    
-    
-    func vcToAddViewController() {
-        
-        let vc = AddNewProjectViewController()
-        vc.addDelegete = self
-        
-    }
-    
    @IBAction func dissmissVC(segue: UIStoryboardSegue){}
     
     @IBAction func addNewProject(_ sender: Any) {
@@ -56,6 +52,7 @@ extension MainMasterViewController: UITableViewDelegate, UITableViewDataSource {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CustomProjectTableViewCell
         let data = tableData[indexPath.row]
+        print(data.name)
         cell.setText(projectData: data)
         cell.progresValue(projectData: data)
         cell.selectionStyle = .none
@@ -67,6 +64,7 @@ extension MainMasterViewController: UITableViewDelegate, UITableViewDataSource {
 extension MainMasterViewController: AddDataViewControllerProtocol {
     func addVC(newData: Project) {
         tableData.insert(newData, at: 0)
+        dataBase.saveObjects(objs: [newData])
         mainTableView.reloadData()
         
     }

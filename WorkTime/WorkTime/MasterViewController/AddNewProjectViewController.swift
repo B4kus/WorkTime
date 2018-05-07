@@ -63,6 +63,4 @@ class AddNewProjectViewController: UIViewController, UITextFieldDelegate {
         dataToSave.info = infoTextField.text
         
     }
-        
-
 }

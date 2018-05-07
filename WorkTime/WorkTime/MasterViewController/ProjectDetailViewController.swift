@@ -17,11 +17,17 @@ class ProjectDetailViewController: UIViewController {
     @IBOutlet weak var chartView: BarChartView!
     
     var dataTable = [Task]()
+    let dataBase = DBManager()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         vcToAddViewController()
+        let dataFromRealm = dataBase.getObjects(type: Task.self)
+        dataTable = Array(dataFromRealm!) as! [Task]
+        barChartUpdate()
+        
     }
     
     @IBAction func dissmissVC(segue: UIStoryboardSegue){}
@@ -115,6 +121,7 @@ extension ProjectDetailViewController: AddTaskProtocol {
     func addVC(newData: Task) {
         dataTable.insert(newData, at: 0)
         barChartUpdate()
+        dataBase.saveObjects(objs: [newData])
         projectDetailTableView.reloadData()
         
     }

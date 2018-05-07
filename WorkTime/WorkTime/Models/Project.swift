@@ -21,6 +21,9 @@ public final class Project: Object {
     @objc dynamic var extraInfo: String?
     @objc dynamic var project_id: String?
     
+   
+    
+    
     
     private struct SerializationKeys {
         
@@ -32,9 +35,12 @@ public final class Project: Object {
         static let info = "info"
         static let extraInfo = "extraInfo"
         static let project_id = "project_id"
+        static let tasks = "tasks"
+        
+        
         
     }
-    
+    var tasks: [Task]?
     override public static func primaryKey() -> String? {
         
         return "project_id"

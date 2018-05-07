@@ -24,7 +24,7 @@ class AddNewTaskViewController: UIViewController, UITextFieldDelegate {
     let thePicker = UIPickerView()
     var addDelegete: AddTaskProtocol?
     var dataToSave = Task()
-    let myPickerData = [String](arrayLiteral: "Niski", "Normalny", "Duży")
+    let myPickerData = [String](arrayLiteral: "Brak" ,"Niski", "Normalny", "Duży")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +43,7 @@ class AddNewTaskViewController: UIViewController, UITextFieldDelegate {
         dataToSave.time =  Int(timeTextField.text!)!
         dataToSave.priority = priorityTextField.text
         dataToSave.extraInfo =  infoTextField.text
+        dataToSave.task_id = UUID().uuidString
         
     }
     
