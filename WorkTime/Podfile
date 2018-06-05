@@ -9,5 +9,9 @@ target 'WorkTime' do
 
 pod 'Charts'
 pod 'ChartsRealm'
+pod 'ObjectMapper'
+pod 'Moya'
+pod "PromiseKit"
+
 
 end
